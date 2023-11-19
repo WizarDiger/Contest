@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMillionthFibonacciKata", "TheMillionthFibonacciKata\TheMillionthFibonacciKata.csproj", "{64CE5D76-FF1D-4DFD-A100-2CC1DB4B6C26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMillionthFibonacciKata.Tests", "TheMillionthFibonacciKata.Tests\TheMillionthFibonacciKata.Tests.csproj", "{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{64CE5D76-FF1D-4DFD-A100-2CC1DB4B6C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64CE5D76-FF1D-4DFD-A100-2CC1DB4B6C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64CE5D76-FF1D-4DFD-A100-2CC1DB4B6C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
