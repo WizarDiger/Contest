@@ -4,19 +4,19 @@ namespace TheMillionthFibonacciKata.Tyndraxis;
 
 public class Fibonacci
 {
-    private const double Fi = 1.6180339887498948482;
+    private static readonly double firstFi = (1 + Math.Sqrt(5)) / 2;
+    private static readonly double secondFi = (1 - Math.Sqrt(5)) / 2;
 
     public static BigInteger Fib(int n)
     {
-        return n switch
-        {
-            0 => 0,
-            1 => 1,
-            2 => 1,
-            _ => new BigInteger((ulong) Math.Round(SolveFibonacci(n)))
-        };
+        var modifier = n >= 0
+            ? 1L
+            : n % 2 > 0
+                ? -1L
+                : 1;
+        return new BigInteger(modifier * (long) Math.Round(SolveFibonacci(n)));
     }
 
     private static double SolveFibonacci(int n)
-        => (Math.Pow(Fi, n) - Math.Pow(1 - Fi, n)) / Math.Sqrt(5);
+        => (Math.Pow(firstFi, n) - Math.Pow(secondFi, n)) / Math.Sqrt(5);
 }
