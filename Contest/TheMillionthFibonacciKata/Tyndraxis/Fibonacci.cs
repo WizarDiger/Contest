@@ -8,13 +8,14 @@ public class Fibonacci
     private static readonly double secondFi = (1 - Math.Sqrt(5)) / 2;
 
     public static BigInteger Fib(int n)
-    { 
+    {
         var modifier = n >= 0
-            ? 1L
+            ? 1
             : n % 2 > 0
-                ? -1L
+                ? -1
                 : 1;
-        return new BigInteger(modifier * Math.Round(SolveFibonacci(n)));
+        var result = modifier * Math.Round(SolveFibonacci(n));
+        return new BigInteger(result);
     }
 
     private static double SolveFibonacci(int n)
