@@ -1,6 +1,6 @@
 using System.Numerics;
 using FluentAssertions;
-using TheMillionthFibonacciKata.Tyndraxis;
+using TheMillionthFibonacciKata.WizarDiger;
 
 namespace TheMillionthFibonacciKata.Tests;
 

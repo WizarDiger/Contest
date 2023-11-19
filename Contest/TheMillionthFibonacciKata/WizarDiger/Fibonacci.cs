@@ -4,7 +4,7 @@ namespace TheMillionthFibonacciKata.WizarDiger;
 
 public class Fibonacci
 {
-    public static BigInteger fib(int n)
+    public static BigInteger Fib(int n)
     {
         var myArr = new int[n];
         myArr[0] = 0;
