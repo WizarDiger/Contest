@@ -9,7 +9,12 @@ public class Fibonacci
 
     public static BigInteger Fib(int n)
     {
-        return new BigInteger((ulong) Math.Round(SolveFibonacci(n)));
+        var modifier = n >= 0
+            ? 1L
+            : n % 2 > 0
+                ? -1L
+                : 1;
+        return new BigInteger(modifier * (long) Math.Round(SolveFibonacci(n)));
     }
 
     private static double SolveFibonacci(int n)
