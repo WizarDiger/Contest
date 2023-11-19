@@ -14,6 +14,14 @@ public class FibonacciTests
         result.Should().Be(expected);
     }
 
+    [Test]
+    public void Fib_BigNumber_ShouldNotThrow()
+    {
+        var act = () => Fibonacci.Fib(2_000_000);
+
+        act.Should().NotThrow();
+    }
+
     private static IEnumerable<TestCaseData> FibCases()
     {
         yield return new TestCaseData(0, new BigInteger(0));
