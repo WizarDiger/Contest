@@ -6,15 +6,22 @@ public class Fibonacci
 {
     public static BigInteger Fib(int n)
     {
-        var myArr = new Int64[n];
-        if (n == 0) return 0;
-        myArr[0] = 1;
-        if (n == 1) return 1;
-        myArr[1] = 1;
-            for (int i = 2; i < n; i++)
-            {
-                myArr[i] = myArr[i - 1] + myArr[i - 2];
-            }
-        return myArr[n - 1];
+
+        var q1 = Math.Pow(1 + Math.Sqrt(5), n);
+        var q2 = Math.Pow(1 - Math.Sqrt(5), n);
+        var q3 = q1 - q2;
+        var q4 = Math.Sqrt(5) * Math.Pow(2, n);
+        BigInteger result = (BigInteger)(q3 / q4);
+
+        if (n < 0)
+        {
+            var w1 = Math.Pow(1 + Math.Sqrt(5), n*(-1));
+            var w2 = Math.Pow(1 - Math.Sqrt(5), n*(-1));
+            var w3 = q1 - q2;
+            var w4 = Math.Sqrt(5) * Math.Pow(2, n*(-1));
+
+            result = (BigInteger)(Math.Pow(-1, n + 1) * w4);
+        }
+        return result;
     }
 }
