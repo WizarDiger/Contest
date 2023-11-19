@@ -4,7 +4,8 @@ namespace TheMillionthFibonacciKata.Tyndraxis;
 
 public class Fibonacci
 {
-    private const double Fi = 1.6180339887498948482;
+    private static readonly double firstFi = (1 + Math.Sqrt(5)) / 2;
+    private static readonly double secondFi = (1 - Math.Sqrt(5)) / 2;
 
     public static BigInteger Fib(int n)
     {
@@ -12,5 +13,5 @@ public class Fibonacci
     }
 
     private static double SolveFibonacci(int n)
-        => (Math.Pow(Fi, n) - Math.Pow(1 - Fi, n)) / Math.Sqrt(5);
+        => (Math.Pow(firstFi, n) - Math.Pow(secondFi, n)) / Math.Sqrt(5);
 }
