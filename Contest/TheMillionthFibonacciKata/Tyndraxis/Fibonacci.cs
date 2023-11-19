@@ -11,11 +11,11 @@ public class Fibonacci
             0 => 0,
             1 => 1,
             2 => 1,
-            _ => Solve(n)
+            _ => SolveFibonacci(n)
         };
     }
 
-    private static BigInteger Solve(int n)
+    private static BigInteger SolveFibonacci(int n)
     {
         var firstPrevious = 1;
         var secondPrevious = 1;
