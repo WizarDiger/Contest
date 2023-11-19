@@ -8,13 +8,7 @@ public class Fibonacci
 
     public static BigInteger Fib(int n)
     {
-        return n switch
-        {
-            0 => 0,
-            1 => 1,
-            2 => 1,
-            _ => new BigInteger((ulong) Math.Round(SolveFibonacci(n)))
-        };
+        return new BigInteger((ulong) Math.Round(SolveFibonacci(n)));
     }
 
     private static double SolveFibonacci(int n)
