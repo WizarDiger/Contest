@@ -17,15 +17,15 @@ public class Fibonacci
 
     private static BigInteger Solve(int n)
     {
-        var fibonacciNumbers = new BigInteger[n];
-        fibonacciNumbers[0] = 1;
-        fibonacciNumbers[1] = 1;
+        var firstPrevious = 1;
+        var secondPrevious = 1;
         for (var i = 2; i < n; i++)
         {
-            var next = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
-            fibonacciNumbers[i] = next;
+            var next = firstPrevious + secondPrevious;
+            firstPrevious = secondPrevious;
+            secondPrevious = next;
         }
 
-        return fibonacciNumbers.Last();
+        return secondPrevious;
     }
 }
