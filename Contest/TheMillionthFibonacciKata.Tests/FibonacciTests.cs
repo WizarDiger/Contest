@@ -1,6 +1,6 @@
 using System.Numerics;
 using FluentAssertions;
-using TheMillionthFibonacciKata.WizarDiger;
+using TheMillionthFibonacciKata.Tyndraxis;
 
 namespace TheMillionthFibonacciKata.Tests;
 
@@ -20,6 +20,7 @@ public class FibonacciTests
         yield return new TestCaseData(1, new BigInteger(1));
         yield return new TestCaseData(2, new BigInteger(1));
         yield return new TestCaseData(3, new BigInteger(2));
-        yield return new TestCaseData(4, new BigInteger(3));
+        yield return new TestCaseData(5, new BigInteger(5));
+        yield return new TestCaseData(10, new BigInteger(55));
     }
 }
