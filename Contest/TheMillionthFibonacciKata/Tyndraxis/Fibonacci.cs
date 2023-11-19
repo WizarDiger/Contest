@@ -4,6 +4,8 @@ namespace TheMillionthFibonacciKata.Tyndraxis;
 
 public class Fibonacci
 {
+    private const double Fi = 1.6180339887498948482;
+
     public static BigInteger Fib(int n)
     {
         return n switch
@@ -11,21 +13,10 @@ public class Fibonacci
             0 => 0,
             1 => 1,
             2 => 1,
-            _ => SolveFibonacci(n)
+            _ => new BigInteger((ulong) Math.Round(SolveFibonacci(n)))
         };
     }
 
-    private static BigInteger SolveFibonacci(int n)
-    {
-        var firstPrevious = 1;
-        var secondPrevious = 1;
-        for (var i = 2; i < n; i++)
-        {
-            var next = firstPrevious + secondPrevious;
-            firstPrevious = secondPrevious;
-            secondPrevious = next;
-        }
-
-        return secondPrevious;
-    }
+    private static double SolveFibonacci(int n)
+        => (Math.Pow(Fi, n) - Math.Pow(1 - Fi, n)) / Math.Sqrt(5);
 }
