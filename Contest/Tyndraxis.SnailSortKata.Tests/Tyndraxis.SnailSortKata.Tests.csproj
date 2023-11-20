@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-
+        <ProjectReference Include="..\Tyndraxis.SnailSortKata\Tyndraxis.SnailSortKata.csproj" />
         <ProjectReference Include="..\WizarDiger.SnailSortKata\WizarDiger.SnailSortKata.csproj"/>
     </ItemGroup>
 

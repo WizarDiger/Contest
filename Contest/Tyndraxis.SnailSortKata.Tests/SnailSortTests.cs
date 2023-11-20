@@ -1,5 +1,4 @@
 using FluentAssertions;
-using WizarDiger.SnailSortKata;
 
 namespace Tyndraxis.SnailSortKata.Tests;
 
@@ -20,7 +19,7 @@ public class SnailSortTests
             Array.Empty<int>()
         );
         yield return new TestCaseData(
-           new int[][] {Array.Empty<int>()},
+           new[] {Array.Empty<int>()},
            Array.Empty<int>()
         );
         yield return new TestCaseData(

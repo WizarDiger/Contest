@@ -11,18 +11,16 @@ public class SnailSort
         var currentIndex = new Index(0, 0);
         var currentDirection = MoveDirection.Right;
 
-        var visitedIndexesCount = 1;
         var visitedNumbers = new List<int>() {array[currentIndex.X][currentIndex.Y]};
         var visitedIndexes = new HashSet<Index> {currentIndex};
         var elementsCount = array.Sum(x => x.Length);
-        while (visitedIndexesCount < elementsCount)
+        while (visitedNumbers.Count < elementsCount)
         {
             var (wasMoved, nextDirection, nextIndex) = DoNextMove(currentIndex, currentDirection, visitedIndexes, array);
             if (wasMoved)
             {
                 currentIndex = nextIndex;
                 visitedNumbers.Add(array[currentIndex.X][currentIndex.Y]);
-                visitedIndexesCount++;
                 continue;
             }
 
