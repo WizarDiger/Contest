@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Numerics;
 
 namespace WizarDiger.TheMillionthFibonacciKata;
@@ -38,8 +39,10 @@ public class Fibonacci
         else
         {
             modifier= Math.Pow(-1,n+1);
-        }      
-        return new BigInteger(modifier) * result[1, 0];
+        }
+        var res = new BigInteger(modifier) * result[1, 0];
+        Console.WriteLine( res);
+        return new BigInteger(modifier) * result[1, 0];      
     }
 
     private static BigInteger[,] Multiply(BigInteger[,] matrix1, BigInteger[,] matrix2)

@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyndraxis.TheMillionthFibonacciKata.Tests", "Tyndraxis.TheMillionthFibonacciKata.Tests\Tyndraxis.TheMillionthFibonacciKata.Tests.csproj", "{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyndraxis.TheMillionthFibonacciKata.Tests", "Tyndraxis.TheMillionthFibonacciKata.Tests\Tyndraxis.TheMillionthFibonacciKata.Tests.csproj", "{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizarDiger.TheMillionthFibonacciKata", "WizarDiger.TheMillionthFibonacciKata\WizarDiger.TheMillionthFibonacciKata.csproj", "{41FA5A38-A065-427E-B25B-F57E0CA12AD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WizarDiger.TheMillionthFibonacciKata", "WizarDiger.TheMillionthFibonacciKata\WizarDiger.TheMillionthFibonacciKata.csproj", "{41FA5A38-A065-427E-B25B-F57E0CA12AD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyndraxis.TheMillionthFibonacciKata", "Tyndraxis.TheMillionthFibonacciKata\Tyndraxis.TheMillionthFibonacciKata.csproj", "{D556D887-204D-4F91-8C98-B352D6612E8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyndraxis.TheMillionthFibonacciKata", "Tyndraxis.TheMillionthFibonacciKata\Tyndraxis.TheMillionthFibonacciKata.csproj", "{D556D887-204D-4F91-8C98-B352D6612E8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizarDiger.TheMillionthFibonacciKata.Tests", "WizarDiger.TheMillionthFibonacciKata.Tests\WizarDiger.TheMillionthFibonacciKata.Tests.csproj", "{C7A24629-849E-4BA3-8FDF-A96386E4325E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WizarDiger.TheMillionthFibonacciKata.Tests", "WizarDiger.TheMillionthFibonacciKata.Tests\WizarDiger.TheMillionthFibonacciKata.Tests.csproj", "{C7A24629-849E-4BA3-8FDF-A96386E4325E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizarDiger.SnailSortKata", "WizarDiger.SnailSortKata\WizarDiger.SnailSortKata.csproj", "{70474D97-CA21-44ED-BDDE-8369DFAB8EE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D556D887-204D-4F91-8C98-B352D6612E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D556D887-204D-4F91-8C98-B352D6612E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D556D887-204D-4F91-8C98-B352D6612E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D556D887-204D-4F91-8C98-B352D6612E8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6271AFAE-7B29-4AD1-B7EF-D9AF8D8859B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,9 +27,23 @@ Global
 		{41FA5A38-A065-427E-B25B-F57E0CA12AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41FA5A38-A065-427E-B25B-F57E0CA12AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41FA5A38-A065-427E-B25B-F57E0CA12AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D556D887-204D-4F91-8C98-B352D6612E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D556D887-204D-4F91-8C98-B352D6612E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D556D887-204D-4F91-8C98-B352D6612E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D556D887-204D-4F91-8C98-B352D6612E8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7A24629-849E-4BA3-8FDF-A96386E4325E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C7A24629-849E-4BA3-8FDF-A96386E4325E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7A24629-849E-4BA3-8FDF-A96386E4325E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7A24629-849E-4BA3-8FDF-A96386E4325E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70474D97-CA21-44ED-BDDE-8369DFAB8EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70474D97-CA21-44ED-BDDE-8369DFAB8EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70474D97-CA21-44ED-BDDE-8369DFAB8EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70474D97-CA21-44ED-BDDE-8369DFAB8EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEA25608-F4EB-4934-874B-77A16416315D}
 	EndGlobalSection
 EndGlobal
