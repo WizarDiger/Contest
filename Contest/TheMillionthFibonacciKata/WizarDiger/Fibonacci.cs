@@ -4,24 +4,47 @@ namespace TheMillionthFibonacciKata.WizarDiger;
 
 public class Fibonacci
 {
+    private static readonly BigInteger[,] matrix = new BigInteger[,]
+   {
+        {0, 1},
+        {1, 1}
+   };
+
+    private static readonly BigInteger[,] identityMatrix = new BigInteger[,]
+    {
+        {1, 0},
+        {0, 1}
+    };
+
     public static BigInteger Fib(int n)
     {
-
-        var q1 = Math.Pow(1 + Math.Sqrt(5), n);
-        var q2 = Math.Pow(1 - Math.Sqrt(5), n);
-        var q3 = q1 - q2;
-        var q4 = Math.Sqrt(5) * Math.Pow(2, n);
-        BigInteger result = (BigInteger)(q3 / q4);
-
-        if (n < 0)
+        var nAbs = Math.Abs(n);
+        var result = identityMatrix;
+        var bits = Convert.ToString(nAbs, 2);
+        foreach (var bit in bits)
         {
-            var w1 = Math.Pow(1 + Math.Sqrt(5), n * (-1));
-            var w2 = Math.Pow(1 - Math.Sqrt(5), n * (-1));
-            var w3 = w1 - w2;
-            var w4 = Math.Sqrt(5) * Math.Pow(2, n * (-1));
-
-            result = (BigInteger)(Math.Pow(-1, n + 1) * w4);
+            result = Multiply(result, result);
+            if (bit == '1')
+            {
+                result = Multiply(result, matrix);
+            }
         }
-        return result;
+        var modifier = 0.0;
+        if (n >= 0)
+        {
+            modifier= 1;
+        }
+        else
+        {
+            modifier= Math.Pow(-1,n+1);
+        }      
+        return new BigInteger(modifier) * result[1, 0];
     }
+
+    private static BigInteger[,] Multiply(BigInteger[,] matrix1, BigInteger[,] matrix2)
+        => new[,]
+        {
+            {matrix1[0, 0] * matrix2[0, 0] + matrix1[0, 1] * matrix2[1, 0], matrix1[0, 0] * matrix2[0, 1] + matrix1[0, 1] * matrix2[1, 1]},
+            {matrix1[1, 0] * matrix2[0, 0] + matrix1[1, 1] * matrix2[1, 0], matrix1[1, 0] * matrix2[0, 1] + matrix1[1, 1] * matrix2[1, 1]}
+        };
 }
