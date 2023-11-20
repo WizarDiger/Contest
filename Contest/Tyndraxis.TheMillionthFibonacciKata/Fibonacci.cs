@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace TheMillionthFibonacciKata.Tyndraxis;
+namespace Tyndraxis.TheMillionthFibonacciKata;
 
 public class Fibonacci
 {

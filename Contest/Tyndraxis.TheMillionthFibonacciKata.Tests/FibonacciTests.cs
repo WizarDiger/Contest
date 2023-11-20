@@ -1,9 +1,8 @@
 using System.Numerics;
 using FluentAssertions;
 using FluentAssertions.Extensions;
-using TheMillionthFibonacciKata.Tyndraxis;
 
-namespace TheMillionthFibonacciKata.Tests;
+namespace Tyndraxis.TheMillionthFibonacciKata.Tests;
 
 public class FibonacciTests
 {

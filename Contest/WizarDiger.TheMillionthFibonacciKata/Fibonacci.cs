@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace TheMillionthFibonacciKata.WizarDiger;
+namespace WizarDiger.TheMillionthFibonacciKata;
 
 public class Fibonacci
 {

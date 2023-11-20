@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TheMillionthFibonacciKata\TheMillionthFibonacciKata.csproj" />
+      <ProjectReference Include="..\Tyndraxis.TheMillionthFibonacciKata\Tyndraxis.TheMillionthFibonacciKata.csproj" />
     </ItemGroup>
 
 </Project>
