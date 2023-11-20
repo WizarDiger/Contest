@@ -1,4 +1,5 @@
 using FluentAssertions;
+using WizarDiger.SnailSortKata;
 
 namespace Tyndraxis.SnailSortKata.Tests;
 

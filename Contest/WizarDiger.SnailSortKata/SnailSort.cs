@@ -2,7 +2,7 @@
 
 namespace WizarDiger.SnailSortKata
 {
-    internal class SnailSort
+    public class SnailSort
     {
 
         public static int[] Snail(int[][] array)

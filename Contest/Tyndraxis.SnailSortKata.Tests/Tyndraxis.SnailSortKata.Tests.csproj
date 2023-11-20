@@ -4,7 +4,6 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
     </PropertyGroup>
@@ -19,7 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Tyndraxis.SnailSortKata\Tyndraxis.SnailSortKata.csproj" />
+
+        <ProjectReference Include="..\WizarDiger.SnailSortKata\WizarDiger.SnailSortKata.csproj"/>
     </ItemGroup>
 
 </Project>
