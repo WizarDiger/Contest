@@ -15,10 +15,10 @@ public class Fibonacci
 
         if (n < 0)
         {
-            var w1 = Math.Pow(1 + Math.Sqrt(5), n*(-1));
-            var w2 = Math.Pow(1 - Math.Sqrt(5), n*(-1));
-            var w3 = q1 - q2;
-            var w4 = Math.Sqrt(5) * Math.Pow(2, n*(-1));
+            var w1 = Math.Pow(1 + Math.Sqrt(5), n * (-1));
+            var w2 = Math.Pow(1 - Math.Sqrt(5), n * (-1));
+            var w3 = w1 - w2;
+            var w4 = Math.Sqrt(5) * Math.Pow(2, n * (-1));
 
             result = (BigInteger)(Math.Pow(-1, n + 1) * w4);
         }
