@@ -20,6 +20,10 @@ public class SnailSortTests
             Array.Empty<int>()
         );
         yield return new TestCaseData(
+           new int[][] {Array.Empty<int>()},
+           Array.Empty<int>()
+        );
+        yield return new TestCaseData(
             new[]
             {
                 new[] {1}
