@@ -4,6 +4,7 @@ namespace TheMillionthFibonacciKata.WizarDiger;
 
 public class Fibonacci
 {
+    const char one = '1';
     private static readonly BigInteger[,] matrix = new BigInteger[,]
    {
         {0, 1},
@@ -24,7 +25,7 @@ public class Fibonacci
         foreach (var bit in bits)
         {
             result = Multiply(result, result);
-            if (bit == '1')
+            if (bit == one)
             {
                 result = Multiply(result, matrix);
             }
